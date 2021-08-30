@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<form name="cal">
+		
+			<tr>
+				<td>Formula:-</td>
+				<td><input type="text" name="formula">
+				<input type="button" name="answer" value="   ">
+				</td>
+			</tr>
+			
+			<table>
+			<tr>
+				<td><input type="button" name="" value=" 1 " onclick="cal.formula.value += 1 "></td>
+				<td><input type="button" name="" value=" 2 " onclick="cal.formula.value += 2 "></td>
+				<td><input type="button" name="" value=" 3 " onclick="cal.formula.value += 3 "></td>
+			</tr>
+			<tr>
+				<td><input type="button" name="" value=" 4 " onclick="cal.formula.value += 4 "></td>
+				<td><input type="button" name="" value=" 5 " onclick="cal.formula.value += 5 "></td>
+				<td><input type="button" name="" value=" 6 " onclick="cal.formula.value += 6 "></td>
+			</tr>
+			<tr>
+				<td><input type="button" name="" value=" 7 " onclick="cal.formula.value += 7 "></td>
+				<td><input type="button" name="" value=" 8 " onclick="cal.formula.value += 8 "></td>
+				<td><input type="button" name="" value=" 9 " onclick="cal.formula.value += 9 "></td>
+			</tr>
+			<tr>	
+				<td><input type="button" name="" value=" + " onclick="cal.formula.value += '+' "></td>
+				<td><input type="button" name="" value=" - " onclick="cal.formula.value += '-' "></td>
+				<td><input type="button" name="" value=" * " onclick="cal.formula.value += '*' "></td>
+			</tr>
+			<tr>
+				<td><input type="button" name="" value=" / " onclick="cal.formula.value += '/' "></td>
+				<td><input type="button" name="" value=" 0 " onclick="cal.formula.value += '0' "></td>
+				<td><input type="button" name="" value=" = " onclick="cal.answer.value = eval(cal.formula.value) "></td>
+			</tr>
+			
+		</table>
+		<tr><td>
+				<input type="button" value="Clear" onclick="cal.formula.value='' ">
+			</td>
+		</tr>
+	</form>
+
+</body>
+</html>
